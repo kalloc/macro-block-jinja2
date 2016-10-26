@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{%- block menu %}Template{% endblock -%}
+
+{% block content %}
+    <p>My string: {{my_string}}</p>
+    <p>Value from the list: {{my_list[3]}}</p>
+    <p>Loop through the list:</p>
+    <ul>
+      {% for n in my_list %}
+      <li>{{n}}</li>
+      {% endfor %}
+    </ul>
+{% endblock %}

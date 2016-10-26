@@ -1,0 +1,7 @@
+
+{% macro menu() %}
+    {%- block menu %}Original{% endblock -%}
+{% endmacro %}
+
+{% set menu = menu().strip() %}
+{{ menu }}
